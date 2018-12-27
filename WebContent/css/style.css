@@ -65,3 +65,11 @@ table{
 .form{
 	display:inline-block;
 }
+#products{
+	text-align:left;
+}
+.product{
+	display: inline-block;
+	width:33%;
+	margin-right:auto;
+}

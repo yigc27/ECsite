@@ -13,11 +13,6 @@
 <title>BuyItem画面</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <style>
-	.product{
-		display: inline-block;
-		width:30%;
-		margin-right:auto;
-	}
 	#basket{
 		background-color:lightblue;
 		opacity:0.7;
@@ -81,8 +76,9 @@
 			<s:if test="message !=null">
 				<p><s:property value="message"/></p>
 			</s:if>
+			<div id = "products">
 			<s:iterator value="buyItemDTOList">
-			<div class = product>
+			<div class = "product">
 				<s:form action="BasketAction">
 				<table>
 					<tr>
@@ -133,6 +129,7 @@
 					</s:form>
 					</div>
 					</s:iterator>
+					</div>
 			</div>
 			<div class="clear">
 				<p>前画面に戻る場合は<a href='<s:url action = "GoHomeAction"/>'>こちら</a></p>
