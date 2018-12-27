@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+/*========TAG LAYOUT========*/
+body{
+	margin:0;
+	padding:0;
+	line-height:1.6;
+	letter-spacing:1px;
+	font-family:Verdana,Helvetica,sans-serif;
+	font-size:12px;
+	color:#333;
+	background:#fff;
+}
+table{
+	text-align:center;
+	margin:0 auto;
+}
+
+/*=========ID LAYOUT========*/
+
+#top{
+	width:200px;
+	margin:30px auto;
+	border:1px solid #6CB1CA;
+	background-color: #F0FAFF;
+	}
+#header{
+	width: 100%;
+	height: 80px;
+	background-color: #0B4C5F;
+}
+#main{
+	width:100%;
+	min-height: 500px;
+	text-align:center;
+}
+#footer{
+	width:100%;
+	height:80px;
+	background-color: #0B4C5F;
+	clear: both;
+}
+#text-link{
+	display:inline-block;
+	text-align:right;
+}
+
+.submit{
+	background-color:#F0FAFF;
+	border:#6EB3CD 1px solid;
+	border-radius:0px;
+	height:100px;
+	width:200px;
+	margin:20px;
+	word-wrap:break-word;
+	transition:all 500ms;
+}
+
+.submit:hover{
+	background-color: #D0EAFF;
+	border:#6EB3CD 3px solid;
+	border-radius:200px;
+	position:relative;
+}
+
+.form{
+	display:inline-block;
+}
