@@ -13,10 +13,10 @@
 <title>BuyItem画面</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <style>
-	table{
-		float:left;
+	.product{
+		display: inline-block;
 		width:30%;
-		margin:5%;
+		margin-right:auto;
 	}
 	#basket{
 		background-color:lightblue;
@@ -82,6 +82,7 @@
 				<p><s:property value="message"/></p>
 			</s:if>
 			<s:iterator value="buyItemDTOList">
+			<div class = product>
 				<s:form action="BasketAction">
 				<table>
 					<tr>
@@ -130,6 +131,7 @@
 					</tr>
 					</table>
 					</s:form>
+					</div>
 					</s:iterator>
 			</div>
 			<div class="clear">
